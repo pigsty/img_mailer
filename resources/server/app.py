@@ -6,7 +6,7 @@ import smtplib
 import urllib2, base64
 
 app = Flask(__name__)
-app.config_from_pyfile("/config/img_mailer.cfg")
+app.config.from_pyfile("/config/img_mailer.cfg")
 
 
 @app.route("/")

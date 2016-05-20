@@ -32,6 +32,9 @@ if __name__ == '__main__':
     # Subscribe this server
     server.subscribe()
 
+    # Log to stdout
+    cherrypy.log.screen = True
+
     # Start the server engine (Option 1 *and* 2)
 
     cherrypy.engine.start()
