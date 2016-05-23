@@ -34,6 +34,8 @@ if __name__ == '__main__':
 
     # Log to stdout
     cherrypy.log.screen = True
+    cherrypy.log.accesslog = "access.log"
+    cherrypy.log.errorlog = "error.log"
 
     # Start the server engine (Option 1 *and* 2)
 
