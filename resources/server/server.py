@@ -34,8 +34,8 @@ if __name__ == '__main__':
 
     # Log to stdout
     cherrypy.log.screen = True
-    cherrypy.log.accesslog = "/config/access.log"
-    cherrypy.log.errorlog = "/config/error.log"
+    cherrypy.log.access_file = "/config/access.log"
+    cherrypy.log.error_file = "/config/error.log"
 
     # Start the server engine (Option 1 *and* 2)
 
